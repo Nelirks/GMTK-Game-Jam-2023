@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
         controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
+
+        controls.Player.Interact.performed += ctx => Interact();
     }
 
     void OnEnable()
@@ -32,5 +34,11 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = moveInput * speed;
+    }
+
+    private void Interact()
+    {
+        Debug.Log("Interacted");
+        
     }
 }
