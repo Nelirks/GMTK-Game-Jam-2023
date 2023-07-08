@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
         controls.Player.Interact.performed += ctx => Interact();
+        controls.Player.Interact.performed += ctx => DialogueBox.instance.DisplayNextLine();
     }
 
     void OnEnable()

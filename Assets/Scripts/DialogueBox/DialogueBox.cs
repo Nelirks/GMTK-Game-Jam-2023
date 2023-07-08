@@ -12,20 +12,11 @@ public class DialogueBox : MonoBehaviour
     private int currentLineIndex;
 
     public static DialogueBox instance;
-
     // Start is called before the first frame update
     void Start()
     {
         SetVisible(false);
         instance = this;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.anyKeyDown) {
-            DisplayNextLine();
-		}
     }
 
     public void DisplayDialogue(DialogueInfo dialogue) {
@@ -35,7 +26,8 @@ public class DialogueBox : MonoBehaviour
         DisplayNextLine();
 	}
 
-    private void DisplayNextLine() {
+    public void DisplayNextLine() {
+        if (!enabled) return;
         if (currentLineIndex >= currentDialogue.dialogueLines.Count) {
             SetVisible(false);
             return;
