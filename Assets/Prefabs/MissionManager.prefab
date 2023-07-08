@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7531230335461899787
+--- !u!1 &8821971688719612863
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2466429238999466338}
-  - component: {fileID: 2307386176451626768}
+  - component: {fileID: 6173943021177379309}
+  - component: {fileID: 5030367834789791463}
   m_Layer: 0
   m_Name: MissionManager
   m_TagString: Untagged
@@ -17,31 +17,95 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2466429238999466338
+--- !u!4 &6173943021177379309
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531230335461899787}
+  m_GameObject: {fileID: 8821971688719612863}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2307386176451626768
+--- !u!114 &5030367834789791463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7531230335461899787}
+  m_GameObject: {fileID: 8821971688719612863}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 201e7f7ceabfd3349ae55a4840f017f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missions: []
+  missions:
+  - checklist:
+    - id: knife
+      text: The killer picked up a knife on a table
+      infoLevel: 0
+      isComplete: 0
+    - id: shower
+      text: They brutally murdered the closest person, who was taking a shower
+      infoLevel: 0
+      isComplete: 0
+    - id: key
+      text: They rummaged through the closets and found a key to the locked door
+      infoLevel: 1
+      isComplete: 0
+    - id: power
+      text: They destroyed the circuit breaker, disabling security
+      infoLevel: 1
+      isComplete: 0
+    - id: elevator
+      text: They left the scene using the elevator
+      infoLevel: 1
+      isComplete: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
+          m_MethodName: DisplayDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: df3e17db265485048a58abcc909fa751, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: VictimPanel, Assembly-CSharp
+          m_MethodName: SetVictimInfo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LocationPanel, Assembly-CSharp
+          m_MethodName: SetText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: room 048 - 1st floor
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    completeObjectives: 0

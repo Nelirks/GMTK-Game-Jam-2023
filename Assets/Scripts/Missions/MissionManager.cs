@@ -6,24 +6,29 @@ public class MissionManager : MonoBehaviour
 {
     public static MissionManager instance;
 
-    [SerializeField] List<Mission> missions;
+    [SerializeField] private List<Mission> missions;
 
     private int missionIndex;
+    private int currentInfoLevel;
 
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
         missionIndex = 0;
+        currentInfoLevel = 0;
         missions[missionIndex].OnStart.Invoke();
         MissionPanel.instance.UpdateText();
     }
 
-    public void CompleteObjective() {
-        if (missions[missionIndex].ProgressMission()) {
+    public void CompleteObjective(string id = "") {
+        missions[missionIndex].CheckObjective(id);
+        MissionPanel.instance.UpdateText();
+        if (missions[missionIndex].IsMissionFinished()) {
             missions[missionIndex].OnComplete.Invoke();
-            missionIndex += 1;
-            if (missionIndex < missions.Count) {
+            if (missionIndex + 1 < missions.Count) {
+                missionIndex += 1;
+                currentInfoLevel = 0;
                 missions[missionIndex].OnStart.Invoke();
                 Debug.Log("Next mission");
 			}
@@ -31,10 +36,14 @@ public class MissionManager : MonoBehaviour
                 Debug.Log("Game end !!!");
 			}
 		}
-        MissionPanel.instance.UpdateText();
-	}
+    }
 
     public string GetMissionReport() {
-        return "";
+        return missions[missionIndex].GetMissionReport(currentInfoLevel);
+	}
+
+    public void IncreaseInfoLevel() {
+        currentInfoLevel += 1;
+        MissionPanel.instance.UpdateText();
 	}
 }
