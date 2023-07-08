@@ -21,7 +21,7 @@ public class PickableObject : MonoBehaviour
     void Start()
     {
         playerLogic = FindObjectOfType<PlayerLogic>();
-        audioSource = GetComponent<AudioSource>();
+        audioSource = playerLogic.gameObject.GetComponent<AudioSource>();
     }
 
     public void PickUp()
