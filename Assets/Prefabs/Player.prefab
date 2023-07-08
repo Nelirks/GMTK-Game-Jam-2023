@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f59dd6c3fb4f34d8af87b5c86373de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInventor: []
+  playerInventory: []
 --- !u!95 &8874376486445483437
 Animator:
   serializedVersion: 5
