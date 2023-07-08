@@ -27,15 +27,15 @@ public class PickableObject : MonoBehaviour
     public void PickUp()
     {
         if (!isPickable) return;
+        if (pickupSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(pickupSound);
+        }
         playerLogic.playerInventory.Add(this);
         OnInventoryAdd();
         playerLogic.Craft(this, craftableWith, craftResult);
         gameObject.SetActive(false);
 
-        if (pickupSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(pickupSound);
-        }
     }
 
     public void UseObject()

@@ -17,6 +17,7 @@ public class Element : MonoBehaviour
     void Start()
     {
         playerLogic = FindObjectOfType<PlayerLogic>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void TryInteractObject()

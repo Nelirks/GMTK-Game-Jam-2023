@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7506432726546126634}
   - component: {fileID: 8414005981062057380}
   - component: {fileID: 8874376486445483437}
+  - component: {fileID: 7910118614176055908}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -209,6 +210,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!81 &7910118614176055908
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076501405060509511}
+  m_Enabled: 1
 --- !u!1 &8256505433484502591
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8256505433484502591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: -0.7, y: 0, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
