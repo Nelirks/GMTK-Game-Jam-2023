@@ -6,10 +6,8 @@ public class PlayerLogic : MonoBehaviour
 {
     public List<GameObject> pickedUpObjects;
     private int index;
-    // Start is called before the first frame update
     void Start()
     {
-
     }
 
     // Update is called once per frame
