@@ -28,7 +28,7 @@ public class DialogueBox : MonoBehaviour
 	}
 
     public void DisplayNextLine() {
-        if (!enabled) return;
+        if (!gameObject.activeSelf) return;
         if (currentLineIndex >= currentDialogue.dialogueLines.Count) {
             SetVisible(false);
             return;
