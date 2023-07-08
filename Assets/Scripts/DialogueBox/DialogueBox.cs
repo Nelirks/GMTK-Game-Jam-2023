@@ -20,14 +20,6 @@ public class DialogueBox : MonoBehaviour
         instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.anyKeyDown) {
-            DisplayNextLine();
-		}
-    }
-
     public void DisplayDialogue(DialogueInfo dialogue) {
         currentDialogue = dialogue;
         currentLineIndex = 0;
@@ -35,7 +27,8 @@ public class DialogueBox : MonoBehaviour
         DisplayNextLine();
 	}
 
-    private void DisplayNextLine() {
+    public void DisplayNextLine() {
+        if (!enabled) return;
         if (currentLineIndex >= currentDialogue.dialogueLines.Count) {
             SetVisible(false);
             return;
@@ -48,6 +41,6 @@ public class DialogueBox : MonoBehaviour
 
     private void SetVisible(bool visible) {
         gameObject.SetActive(visible);
-        enabled = visible;
+        FindObjectOfType<PlayerController>().PreventMovement(visible);
     }
 }
