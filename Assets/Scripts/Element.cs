@@ -5,7 +5,6 @@ using UnityEngine;
 public class Element : MonoBehaviour
 {
     public GameObject interactibleObject;
-    //public bool interactible = false;
     private PlayerLogic playerLogic;
     public AudioClip activeSound;
     private AudioSource audioSource;

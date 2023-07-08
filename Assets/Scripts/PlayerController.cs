@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private GameObject obj = null;
     private GameObject elem = null;
+    private SpriteRenderer spriteRenderer;
 
 
     void Awake()
     {
         controls = new PlayerControls();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
 
         controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
@@ -37,6 +39,15 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = moveInput * speed;
+        if (moveInput.x == 1)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (moveInput.x == -1)
+        {
+            spriteRenderer.flipX = false;
+        }
+
     }
 
     private void Interact()

@@ -238,11 +238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.124
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.696
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: m_LocalPosition.z
@@ -565,115 +565,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3076501405060509511, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
   m_PrefabInstance: {fileID: 10709256}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &952093946 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
-  m_PrefabInstance: {fileID: 8004825003157313102}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1152973107
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1152973110}
-  - component: {fileID: 1152973109}
-  - component: {fileID: 1152973108}
-  m_Layer: 0
-  m_Name: Pixel Perfect Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1152973108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152973107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AssetsPPU: 100
-  m_RefResolutionX: 240
-  m_RefResolutionY: 135
-  m_UpscaleRT: 0
-  m_PixelSnapping: 1
-  m_CropFrameX: 0
-  m_CropFrameY: 0
-  m_StretchFill: 0
---- !u!20 &1152973109
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152973107}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1152973110
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152973107}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 952093946}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226782553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3076501405060509511, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
@@ -1014,9 +905,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1152973110}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
