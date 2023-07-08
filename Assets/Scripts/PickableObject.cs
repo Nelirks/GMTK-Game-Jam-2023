@@ -2,29 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
-public class Object : MonoBehaviour
+public class PickableObject : MonoBehaviour
 {
-    public GameObject craftableWith;
-    public GameObject craftResult;
-    private PlayerControls controls;
+    public PickableObject craftableWith;
+    public PickableObject craftResult;
     private PlayerLogic playerLogic;
     public Sprite iconUI;
     public AudioClip pickupSound;
     private AudioSource audioSource;
     public int useNumber;
 
+    public bool isPickable = false;
+    public UnityEvent OnObtain;
+
     void Start()
     {
-        controls = new PlayerControls();
         playerLogic = FindObjectOfType<PlayerLogic>();
         audioSource = GetComponent<AudioSource>();
     }
 
     public void PickUp()
     {
-        playerLogic.playerInventory.Add(gameObject);
-        playerLogic.Craft(gameObject, craftableWith, craftResult);
+        if (!isPickable) return;
+        playerLogic.playerInventory.Add(this);
+        OnInventoryAdd();
+        playerLogic.Craft(this, craftableWith, craftResult);
         gameObject.SetActive(false);
 
         if (pickupSound != null && audioSource != null)
@@ -38,7 +42,15 @@ public class Object : MonoBehaviour
         useNumber--;
         if (useNumber <= 0)
         {
-            playerLogic.playerInventory.Remove(gameObject);
+            playerLogic.playerInventory.Remove(this);
         }
     }
+
+    public void OnInventoryAdd() {
+        OnObtain.Invoke();
+	}
+
+    public void SetPickable(bool pickable = true) {
+        isPickable = pickable;
+	}
 }

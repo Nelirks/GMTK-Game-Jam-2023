@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Element : MonoBehaviour
 {
-    public GameObject interactibleObject;
+    public PickableObject interactibleObject;
     private PlayerLogic playerLogic;
     public AudioClip activeSound;
     private AudioSource audioSource;
+
+    public bool isInteractable = false;
+
+    public UnityEvent OnInteract;
+
     void Start()
     {
         playerLogic = FindObjectOfType<PlayerLogic>();
@@ -16,10 +22,9 @@ public class Element : MonoBehaviour
     public void TryInteractObject()
     {
         int index = playerLogic.playerInventory.IndexOf(interactibleObject);
-        if (playerLogic.playerInventory.IndexOf(interactibleObject) != -1)
+        if (isInteractable && playerLogic.playerInventory.IndexOf(interactibleObject) != -1)
         {
-            Debug.Log(index);
-            playerLogic.playerInventory[index].GetComponent<Object>().UseObject();
+            playerLogic.playerInventory[index].UseObject();
             ActiveElement();
         }
     }
@@ -33,6 +38,10 @@ public class Element : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(false);
         transform.GetChild(1).gameObject.SetActive(true);
 
-        Debug.Log("Je suis activé !");
+        OnInteract.Invoke();
     }
+
+    public void SetInteractible(bool interactible = true) {
+        isInteractable = interactible;
+	}
 }

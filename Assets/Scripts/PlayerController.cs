@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour
         controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
 
-        controls.Player.Interact.performed += ctx => Interact();
         controls.Player.Interact.performed += ctx => DialogueBox.instance.DisplayNextLine();
+        controls.Player.Interact.performed += ctx => Interact();
     }
 
     void OnEnable()
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
     {
         if (obj != null)
         {
-            obj.GetComponent<Object>().PickUp();
+            obj.GetComponent<PickableObject>().PickUp();
         }
         else if (elem != null)
         {

@@ -11,26 +11,42 @@ public class DialogueBox : MonoBehaviour
     private DialogueInfo currentDialogue;
     private int currentLineIndex;
 
+    private List<DialogueInfo> queue;
+
     public static DialogueBox instance;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        SetVisible(false);
+        queue = new List<DialogueInfo>();
+        UpdateVisibility();
         instance = this;
     }
 
     public void DisplayDialogue(DialogueInfo dialogue) {
+        if (currentDialogue != null) {
+            queue.Add(dialogue);
+            return;
+		}
         currentDialogue = dialogue;
         currentLineIndex = 0;
-        SetVisible(true);
+        UpdateVisibility();
         DisplayNextLine();
 	}
 
     public void DisplayNextLine() {
-        if (!gameObject.activeSelf) return;
+        if (currentDialogue == null) return;
         if (currentLineIndex >= currentDialogue.dialogueLines.Count) {
-            SetVisible(false);
+            if (queue.Count != 0) {
+                currentDialogue = queue[0];
+                queue.RemoveAt(0);
+                currentLineIndex = 0;
+                DisplayNextLine();
+            }
+            else {
+                currentDialogue = null;
+                UpdateVisibility();
+            }
             return;
         }
         DialogueLine nextLine = currentDialogue.dialogueLines[currentLineIndex];
@@ -39,8 +55,8 @@ public class DialogueBox : MonoBehaviour
         currentLineIndex += 1;
 	}
 
-    private void SetVisible(bool visible) {
-        gameObject.SetActive(visible);
-        FindObjectOfType<PlayerController>().PreventMovement(visible);
+    private void UpdateVisibility() {
+        gameObject.SetActive(currentDialogue != null);
+        FindObjectOfType<PlayerController>().PreventMovement(currentDialogue != null);
     }
 }
