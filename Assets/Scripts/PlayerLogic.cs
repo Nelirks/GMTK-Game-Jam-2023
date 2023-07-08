@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerLogic : MonoBehaviour
 {
-    public List<GameObject> playerInventor;
+    public List<GameObject> playerInventory;
     public void Craft(GameObject pickedObject, GameObject craftableWith, GameObject craftResult)
     {
-        if (playerInventor.IndexOf(craftableWith) != -1)
+        if (playerInventory.IndexOf(craftableWith) != -1)
         {
-            playerInventor.Add(craftResult);
-            playerInventor.Remove(pickedObject);
-            playerInventor.Remove(craftableWith);
+            playerInventory.Add(craftResult);
+            playerInventory.Remove(pickedObject);
+            playerInventory.Remove(craftableWith);
             Debug.Log("crafted");
         }
     }
