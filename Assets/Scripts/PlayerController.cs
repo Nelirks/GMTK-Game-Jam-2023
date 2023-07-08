@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private PlayerControls controls;
     private Rigidbody2D rb;
-    private GameObject obj;
+    private GameObject obj = null;
+    private GameObject elem = null;
+
 
     void Awake()
     {
@@ -39,9 +41,13 @@ public class PlayerController : MonoBehaviour
 
     private void Interact()
     {
-        if (obj.GetComponent<Object>().pickable == true)
+        if (obj != null)
         {
             obj.GetComponent<Object>().PickUp();
+        }
+        else if (elem != null)
+        {
+            elem.GetComponent<Element>().TryInteractObject();
         }
     }
 
@@ -49,8 +55,11 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Object"))
         {
-            other.gameObject.GetComponent<Object>().pickable = true;
             obj = other.gameObject;
+        }
+        if (other.gameObject.tag.Equals("Element"))
+        {
+            elem = other.gameObject;
         }
 
     }
@@ -59,8 +68,11 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Object"))
         {
-            other.gameObject.GetComponent<Object>().pickable = false;
             obj = null;
+        }
+        if (other.gameObject.tag.Equals("Element"))
+        {
+            elem = null;
         }
     }
 }

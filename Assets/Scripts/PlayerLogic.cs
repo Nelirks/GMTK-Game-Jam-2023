@@ -4,26 +4,14 @@ using UnityEngine;
 
 public class PlayerLogic : MonoBehaviour
 {
-    public List<GameObject> pickedUpObjects;
-    private int index;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public List<GameObject> playerInventor;
     public void Craft(GameObject pickedObject, GameObject craftableWith, GameObject craftResult)
     {
-        if (pickedUpObjects.IndexOf(craftableWith) != -1)
+        if (playerInventor.IndexOf(craftableWith) != -1)
         {
-            pickedUpObjects.Add(craftResult);
-            pickedUpObjects.Remove(pickedObject);
-            pickedUpObjects.Remove(craftableWith);
+            playerInventor.Add(craftResult);
+            playerInventor.Remove(pickedObject);
+            playerInventor.Remove(craftableWith);
             Debug.Log("crafted");
         }
     }
