@@ -14,12 +14,14 @@ public class InventorySlot : MonoBehaviour
         RemoveItem();
 	}
 	public void SetItem(PickableObject item) {
+        gameObject.SetActive(true);
         itemName.text = item.itemName;
         itemImage.sprite = item.iconUI;
         this.item = item;
 	}
 
     public void RemoveItem() {
+        gameObject.SetActive(false);
         itemName.text = "";
         itemImage.sprite = null;
         item = null;

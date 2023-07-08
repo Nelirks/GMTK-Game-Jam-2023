@@ -21,7 +21,6 @@ public class Element : MonoBehaviour
 
     public void TryInteractObject()
     {
-        Debug.Log("TRY INTERACT");
         if (!isInteractable) return;
         if (interactibleObject == null) {
             ActivateElement();
@@ -37,7 +36,6 @@ public class Element : MonoBehaviour
 
     public void ActivateElement()
     {
-        Debug.Log("INTERACT");
         isInteractable = false;
         if (activeSound != null && audioSource != null)
         {
