@@ -37,6 +37,7 @@ public class Element : MonoBehaviour
     public void ActivateElement()
     {
         isInteractable = false;
+        transform.GetChild(2).gameObject.SetActive(false);
         if (activeSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(activeSound);
@@ -53,14 +54,14 @@ public class Element : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player") && isInteractable)
         {
             transform.GetChild(2).gameObject.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player") && isInteractable)
         {
             transform.GetChild(2).gameObject.SetActive(false);
             Debug.Log("shine");
