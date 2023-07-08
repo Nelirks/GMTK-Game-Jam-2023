@@ -38,7 +38,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Interact"",
-                    ""type"": ""Value"",
+                    ""type"": ""Button"",
                     ""id"": ""0c41f8d5-c9fb-4406-85c7-3d560534a94a"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",

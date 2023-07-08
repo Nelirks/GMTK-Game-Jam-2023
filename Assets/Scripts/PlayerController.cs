@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed = 10.0f;
     private Vector2 moveInput;
     private PlayerControls controls;
     private Rigidbody2D rb;
+    private GameObject obj;
 
     void Awake()
     {
@@ -38,7 +39,28 @@ public class PlayerMovement : MonoBehaviour
 
     private void Interact()
     {
-        Debug.Log("Interacted");
-        
+        if (obj.GetComponent<Object>().pickable == true)
+        {
+            obj.GetComponent<Object>().PickUp();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Object"))
+        {
+            other.gameObject.GetComponent<Object>().pickable = true;
+            obj = other.gameObject;
+        }
+
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Object"))
+        {
+            other.gameObject.GetComponent<Object>().pickable = false;
+            obj = null;
+        }
     }
 }
