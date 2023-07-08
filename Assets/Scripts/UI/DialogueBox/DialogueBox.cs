@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialogueBox : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
+    [SerializeField] private TextMeshProUGUI interlocutorName;
     [SerializeField] private Image image;
     private DialogueInfo currentDialogue;
     private int currentLineIndex;
@@ -52,6 +53,7 @@ public class DialogueBox : MonoBehaviour
         DialogueLine nextLine = currentDialogue.dialogueLines[currentLineIndex];
         image.sprite = nextLine.sprite;
         text.text = nextLine.line;
+        interlocutorName.text = nextLine.interlocutorName;
         currentLineIndex += 1;
 	}
 

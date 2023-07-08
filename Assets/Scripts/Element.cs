@@ -10,7 +10,7 @@ public class Element : MonoBehaviour
     public AudioClip activeSound;
     private AudioSource audioSource;
 
-    public bool isInteractable = false;
+    public bool isInteractable = true;
 
     public UnityEvent OnInteract;
 
@@ -21,16 +21,24 @@ public class Element : MonoBehaviour
 
     public void TryInteractObject()
     {
+        Debug.Log("TRY INTERACT");
+        if (!isInteractable) return;
+        if (interactibleObject == null) {
+            ActivateElement();
+            return;
+        }
         int index = playerLogic.playerInventory.IndexOf(interactibleObject);
-        if (isInteractable && playerLogic.playerInventory.IndexOf(interactibleObject) != -1)
+        if (interactibleObject == null || playerLogic.playerInventory.IndexOf(interactibleObject) != -1)
         {
             playerLogic.playerInventory[index].UseObject();
-            ActiveElement();
+            ActivateElement();
         }
     }
 
-    public void ActiveElement()
+    public void ActivateElement()
     {
+        Debug.Log("INTERACT");
+        isInteractable = false;
         if (activeSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(activeSound);

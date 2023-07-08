@@ -9,6 +9,7 @@ public class PickableObject : MonoBehaviour
     public PickableObject craftableWith;
     public PickableObject craftResult;
     private PlayerLogic playerLogic;
+    public string itemName;
     public Sprite iconUI;
     public AudioClip pickupSound;
     private AudioSource audioSource;
@@ -43,11 +44,13 @@ public class PickableObject : MonoBehaviour
         if (useNumber <= 0)
         {
             playerLogic.playerInventory.Remove(this);
+            InventoryPanel.instance.RemoveItem(this);
         }
     }
 
     public void OnInventoryAdd() {
         OnObtain.Invoke();
+        InventoryPanel.instance.AddItem(this);
 	}
 
     public void SetPickable(bool pickable = true) {

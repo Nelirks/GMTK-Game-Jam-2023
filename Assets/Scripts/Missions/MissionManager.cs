@@ -16,6 +16,7 @@ public class MissionManager : MonoBehaviour
         instance = this;
         missionIndex = 0;
         missions[missionIndex].OnStart.Invoke();
+        MissionPanel.instance.UpdateText();
     }
 
     public void CompleteObjective() {
@@ -30,5 +31,10 @@ public class MissionManager : MonoBehaviour
                 Debug.Log("Game end !!!");
 			}
 		}
+        MissionPanel.instance.UpdateText();
+	}
+
+    public string GetMissionReport() {
+        return "";
 	}
 }

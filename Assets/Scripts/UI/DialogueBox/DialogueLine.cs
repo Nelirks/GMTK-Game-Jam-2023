@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class DialogueLine
 {
+    public string interlocutorName;
     public string line;
     public Sprite sprite;
 }
