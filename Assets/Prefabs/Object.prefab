@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5929670749010028326}
   - component: {fileID: 6308090989726290142}
   - component: {fileID: 7506432726546126634}
-  - component: {fileID: 159754376072124710}
   - component: {fileID: 1971819547066253267}
+  - component: {fileID: 159754376072124710}
   m_Layer: 0
   m_Name: Object
   m_TagString: Object
@@ -160,19 +160,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9736032, y: 1.9974803}
   m_EdgeRadius: 0
---- !u!114 &159754376072124710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076501405060509511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 396f705df4162054c9815fcd8217ca8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickable: 1
 --- !u!61 &1971819547066253267
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,3 +205,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &159754376072124710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3076501405060509511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396f705df4162054c9815fcd8217ca8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickable: 1
+  craftableWith: {fileID: 0}
+  craftResult: {fileID: 0}
+  iconUI: {fileID: 0}
+  pickupSound: {fileID: 0}
+  useNumber: 0

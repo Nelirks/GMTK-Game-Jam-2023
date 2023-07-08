@@ -5,7 +5,7 @@ using UnityEngine;
 public class Element : MonoBehaviour
 {
     public GameObject interactibleObject;
-    public bool interactible = false;
+    //public bool interactible = false;
     private PlayerLogic playerLogic;
     public AudioClip activeSound;
     private AudioSource audioSource;
@@ -14,19 +14,13 @@ public class Element : MonoBehaviour
         playerLogic = FindObjectOfType<PlayerLogic>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void TryInteractObject()
     {
-        int index = playerLogic.pickedUpObjects.IndexOf(interactibleObject);
-        if (playerLogic.pickedUpObjects.IndexOf(interactibleObject) != -1)
+        int index = playerLogic.playerInventor.IndexOf(interactibleObject);
+        if (playerLogic.playerInventor.IndexOf(interactibleObject) != -1)
         {
             Debug.Log(index);
-            playerLogic.pickedUpObjects[index].GetComponent<Object>().UseObject();
+            playerLogic.playerInventor[index].GetComponent<Object>().UseObject();
             ActiveElement();
         }
     }

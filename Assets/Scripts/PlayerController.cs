@@ -41,11 +41,11 @@ public class PlayerController : MonoBehaviour
 
     private void Interact()
     {
-        if (obj != null && obj.GetComponent<Object>().pickable)
+        if (obj != null)
         {
             obj.GetComponent<Object>().PickUp();
         }
-        else if (elem != null && elem.GetComponent<Element>().interactible)
+        else if (elem != null)
         {
             elem.GetComponent<Element>().TryInteractObject();
         }
@@ -55,12 +55,10 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Object"))
         {
-            other.gameObject.GetComponent<Object>().pickable = true;
             obj = other.gameObject;
         }
         if (other.gameObject.tag.Equals("Element"))
         {
-            other.gameObject.GetComponent<Element>().interactible = true;
             elem = other.gameObject;
         }
 
@@ -70,12 +68,10 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Object"))
         {
-            other.gameObject.GetComponent<Object>().pickable = false;
             obj = null;
         }
         if (other.gameObject.tag.Equals("Element"))
         {
-            other.gameObject.GetComponent<Element>().interactible = false;
             elem = null;
         }
     }

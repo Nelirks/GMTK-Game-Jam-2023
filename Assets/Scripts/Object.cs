@@ -5,7 +5,6 @@ using System;
 
 public class Object : MonoBehaviour
 {
-    public bool pickable = false;
     public GameObject craftableWith;
     public GameObject craftResult;
     private PlayerControls controls;
@@ -15,7 +14,6 @@ public class Object : MonoBehaviour
     private AudioSource audioSource;
     public int useNumber;
 
-    // Start is called before the first frame update
     void Start()
     {
         controls = new PlayerControls();
@@ -25,7 +23,7 @@ public class Object : MonoBehaviour
 
     public void PickUp()
     {
-        playerLogic.pickedUpObjects.Add(gameObject);
+        playerLogic.playerInventor.Add(gameObject);
         playerLogic.Craft(gameObject, craftableWith, craftResult);
         gameObject.SetActive(false);
 
@@ -40,8 +38,7 @@ public class Object : MonoBehaviour
         useNumber--;
         if (useNumber <= 0)
         {
-            playerLogic.pickedUpObjects.Remove(gameObject);
-            //Destroy(gameObject);
+            playerLogic.playerInventor.Remove(gameObject);
         }
     }
 }
