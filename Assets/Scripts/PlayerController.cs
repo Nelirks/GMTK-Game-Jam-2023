@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    [SerializeField] private float baseSpeed = 10.0f;
+    private float speed;
     private Vector2 moveInput;
     private PlayerControls controls;
     private Rigidbody2D rb;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        speed = baseSpeed;
         controls = new PlayerControls();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
@@ -43,16 +45,16 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = moveInput * speed;
         
-        if (moveInput.x != 0 || moveInput.y != 0)
+        if (rb.velocity.x != 0 || rb.velocity.y != 0)
             animator.SetBool("isWalking", true);
         else
             animator.SetBool("isWalking", false);
 
-        if (moveInput.x == 1)
+        if (rb.velocity.x > 0)
         {
             spriteRenderer.flipX = true;
         }
-        else if (moveInput.x == -1)
+        else if (rb.velocity.x < 0)
         {
             spriteRenderer.flipX = false;
         }
@@ -95,4 +97,9 @@ public class PlayerController : MonoBehaviour
             elem = null;
         }
     }
+
+    public void PreventMovement(bool prevent) {
+        if (prevent) speed = 0;
+        else speed = baseSpeed;
+	}
 }

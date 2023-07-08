@@ -12,6 +12,7 @@ public class DialogueBox : MonoBehaviour
     private int currentLineIndex;
 
     public static DialogueBox instance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,6 @@ public class DialogueBox : MonoBehaviour
 
     private void SetVisible(bool visible) {
         gameObject.SetActive(visible);
-        enabled = visible;
+        FindObjectOfType<PlayerController>().PreventMovement(visible);
     }
 }
