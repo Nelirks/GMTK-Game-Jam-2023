@@ -35,7 +35,6 @@ public class PickableObject : MonoBehaviour
         OnInventoryAdd();
         playerLogic.Craft(this, craftableWith, craftResult);
         gameObject.SetActive(false);
-
     }
 
     public void UseObject()
