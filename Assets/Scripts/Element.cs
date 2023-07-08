@@ -15,11 +15,11 @@ public class Element : MonoBehaviour
 
     public void TryInteractObject()
     {
-        int index = playerLogic.playerInventor.IndexOf(interactibleObject);
-        if (playerLogic.playerInventor.IndexOf(interactibleObject) != -1)
+        int index = playerLogic.playerInventory.IndexOf(interactibleObject);
+        if (playerLogic.playerInventory.IndexOf(interactibleObject) != -1)
         {
             Debug.Log(index);
-            playerLogic.playerInventor[index].GetComponent<Object>().UseObject();
+            playerLogic.playerInventory[index].GetComponent<Object>().UseObject();
             ActiveElement();
         }
     }
@@ -30,6 +30,8 @@ public class Element : MonoBehaviour
         {
             audioSource.PlayOneShot(activeSound);
         }
+        transform.GetChild(0).gameObject.SetActive(false);
+        transform.GetChild(1).gameObject.SetActive(true);
 
         Debug.Log("Je suis activé !");
     }

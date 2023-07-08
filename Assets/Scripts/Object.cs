@@ -23,7 +23,7 @@ public class Object : MonoBehaviour
 
     public void PickUp()
     {
-        playerLogic.playerInventor.Add(gameObject);
+        playerLogic.playerInventory.Add(gameObject);
         playerLogic.Craft(gameObject, craftableWith, craftResult);
         gameObject.SetActive(false);
 
@@ -38,7 +38,7 @@ public class Object : MonoBehaviour
         useNumber--;
         if (useNumber <= 0)
         {
-            playerLogic.playerInventor.Remove(gameObject);
+            playerLogic.playerInventory.Remove(gameObject);
         }
     }
 }
