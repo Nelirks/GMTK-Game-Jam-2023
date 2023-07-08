@@ -48,12 +48,30 @@ public class PickableObject : MonoBehaviour
         }
     }
 
-    public void OnInventoryAdd() {
+    public void OnInventoryAdd()
+    {
         OnObtain.Invoke();
         InventoryPanel.instance.AddItem(this);
-	}
+    }
 
-    public void SetPickable(bool pickable = true) {
+    public void SetPickable(bool pickable = true)
+    {
         isPickable = pickable;
-	}
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            transform.GetChild(0).gameObject.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            transform.GetChild(0).gameObject.SetActive(false);
+            Debug.Log("shine");
+        }
+    }
 }

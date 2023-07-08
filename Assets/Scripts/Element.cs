@@ -50,4 +50,20 @@ public class Element : MonoBehaviour
     public void SetInteractible(bool interactible = true) {
         isInteractable = interactible;
 	}
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            transform.GetChild(2).gameObject.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Player"))
+        {
+            transform.GetChild(2).gameObject.SetActive(false);
+            Debug.Log("shine");
+        }
+    }
 }
