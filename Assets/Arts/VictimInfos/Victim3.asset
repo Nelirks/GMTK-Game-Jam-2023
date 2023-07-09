@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Victim3
   m_EditorClassIdentifier: 
   victimSprite: {fileID: 21300000, guid: 604a748bb20133848a37a947b275f4d3, type: 3}
-  victimDesc: Xander - Unknown - Unknown - Unknown - The tests we ran on their DNA
-    broke the machine. Are they even human ?
+  victimDesc: Xander - ??? - ??? - ??? - The tests we ran on their DNA broke the
+    machine. Are they human ?

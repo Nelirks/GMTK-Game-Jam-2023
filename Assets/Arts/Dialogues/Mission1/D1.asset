@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueLines:
   - interlocutorName: Lethim Cook - Detective
     line: The first victim was found in his shower.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Lethim Cook - Detective
     line: Preliminary investigation indicates multiple stab wounds, leading to death.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
