@@ -226,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54adc4f7433e96642abc4a23cb418795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkingSounds: []
+  audioSource: {fileID: 0}
 --- !u!81 &7910118614176055908
 AudioListener:
   m_ObjectHideFlags: 0

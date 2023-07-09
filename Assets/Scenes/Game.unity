@@ -3941,13 +3941,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5498465841113340274, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5498465841113340274, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5523278521317217672, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5602650935931761527, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5602650935931761527, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: audioSource
       value: 
-      objectReference: {fileID: 8004825003157313103}
+      objectReference: {fileID: 8004825003157313114}
     - target: {fileID: 5602650935931761527, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: walkingSounds.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5602650935931761527, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: walkingSounds.Array.data[0]
@@ -4006,7 +4022,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
---- !u!82 &8004825003157313103 stripped
+--- !u!82 &8004825003157313114 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2705592912356664796, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
   m_PrefabInstance: {fileID: 8004825003157313102}
