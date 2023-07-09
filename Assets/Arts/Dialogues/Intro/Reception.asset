@@ -13,6 +13,23 @@ MonoBehaviour:
   m_Name: Reception
   m_EditorClassIdentifier: 
   dialogueLines:
-  - interlocutorName: Recptionist
-    line: 
+  - interlocutorName: Policeman
+    line: Police department, how may I assist you ?
+    sprite: {fileID: 0}
+  - interlocutorName: Amanda - Receptionist
+    line: It's an emergency ! You need to come right now to the hotel ****
+    sprite: {fileID: 0}
+  - interlocutorName: Policeman
+    line: What seems to be the problem ?
+    sprite: {fileID: 0}
+  - interlocutorName: Amanda - Receptionist
+    line: It's horrible, we have discovered multiple customers dead in their rooms,
+      please come help us !!!
+    sprite: {fileID: 0}
+  - interlocutorName: Policeman
+    line: I understand the urgency, a team is on their way as we speak. Please Stay
+      Safe till they get there.
+    sprite: {fileID: 0}
+  - interlocutorName: Amanda - Receptionist
+    line: Please hurry ! The safety of our guests and staff is at risk.
     sprite: {fileID: 0}
