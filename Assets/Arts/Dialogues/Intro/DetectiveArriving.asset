@@ -17,7 +17,7 @@ MonoBehaviour:
     line: So what do we have here Mark ?
     sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Mark - Officer
-    line: As of now, We've found X bodies. No witnesses have come forward and there
+    line: As of now, We've found 4 bodies. No witnesses have come forward and there
       are no suveillance cameras in the building.
     sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Mark - Officer

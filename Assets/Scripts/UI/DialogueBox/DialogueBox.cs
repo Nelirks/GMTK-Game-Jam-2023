@@ -59,6 +59,8 @@ public class DialogueBox : MonoBehaviour
 
     private void UpdateVisibility() {
         gameObject.SetActive(currentDialogue != null);
-        FindObjectOfType<PlayerController>().PreventMovement(currentDialogue != null);
+        if (FindObjectOfType<PlayerController>() != null) {
+            FindObjectOfType<PlayerController>().PreventMovement(currentDialogue != null);
+        }
     }
 }
