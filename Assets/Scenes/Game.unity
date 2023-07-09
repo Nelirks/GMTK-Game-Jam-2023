@@ -3780,7 +3780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5030367834789791463, guid: 2de6aa7dd96d1234796eff922add3427, type: 3}
       propertyPath: missions.Array.data[0].OnComplete.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5030367834789791463, guid: 2de6aa7dd96d1234796eff922add3427, type: 3}
       propertyPath: missions.Array.data[0].OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode

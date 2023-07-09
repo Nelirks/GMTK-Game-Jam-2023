@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5030367834789791463
 MonoBehaviour:
@@ -46,25 +46,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missions:
   - checklist:
-    - id: knife
-      text: The killer picked up a knife on a table
+    - id: door
+      text: Somehow the door was unlocked, so they got in easily
       infoLevel: 0
+      isComplete: 0
+    - id: knife
+      text: They found the murder weapon on the coffee table
+      infoLevel: 1
       isComplete: 0
     - id: shower
-      text: They brutally murdered the closest person, who was taking a shower
-      infoLevel: 0
-      isComplete: 0
-    - id: key
-      text: They rummaged through the closets and found a key to the locked door
-      infoLevel: 1
-      isComplete: 0
-    - id: power
-      text: They destroyed the circuit breaker, disabling security
-      infoLevel: 1
-      isComplete: 0
-    - id: elevator
-      text: They left the scene using the elevator
-      infoLevel: 1
+      text: Then they repeatedly stabbed the the victim through the shower curtain
+      infoLevel: 2
       isComplete: 0
     OnStart:
       m_PersistentCalls:
@@ -74,7 +66,7 @@ MonoBehaviour:
           m_MethodName: DisplayDialogue
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: df3e17db265485048a58abcc909fa751, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: 48c37c468a17be14c9c94056b5a8d16e, type: 2}
             m_ObjectArgumentAssemblyTypeName: DialogueInfo, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -102,7 +94,208 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: room 048 - 1st floor
+            m_StringArgument: Room 048 - 1st floor
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    completeObjectives: 0
+  - checklist:
+    - id: door
+      text: Funny enough the door wasn't locked either... people are too trusting
+      infoLevel: 0
+      isComplete: 0
+    - id: key
+      text: But the access to the electrical room was locked, so how did the killer
+        manage to get in there ?
+      infoLevel: 1
+      isComplete: 0
+    - id: power
+      text: Blood was found on the wires that were cut. Samples were sent to the
+        lab and they found out it belongs to the first victim
+      infoLevel: 2
+      isComplete: 0
+    - id: elevator
+      text: They left the scene using the elevator
+      infoLevel: 3
+      isComplete: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: VictimPanel, Assembly-CSharp
+          m_MethodName: SetVictimInfo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
+          m_MethodName: DisplayDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: d4ee3b76f27edac47ba29ce17230932e, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    completeObjectives: 0
+  - checklist:
+    - id: drink
+      text: Maybe someone mixed a drink from the bar
+      infoLevel: 0
+      isComplete: 0
+    - id: cocktail
+      text: With some poison, but there's none at the bar, where did they find it
+        ?
+      infoLevel: 1
+      isComplete: 0
+    - id: victim
+      text: They then gave their cocktail to the victim
+      infoLevel: 2
+      isComplete: 0
+    - id: door
+      text: They then took the elevator again to keep killing
+      infoLevel: 3
+      isComplete: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: VictimPanel, Assembly-CSharp
+          m_MethodName: SetVictimInfo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LocationPanel, Assembly-CSharp
+          m_MethodName: SetText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Room 048 - 2nd floor
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: Teleport
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
+          m_MethodName: DisplayDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 69e51c3dd7c4956458027b5dec8b3fa8, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnComplete:
+      m_PersistentCalls:
+        m_Calls: []
+    completeObjectives: 0
+  - checklist:
+    - id: pin
+      text: The clients next door complained that someone stole their hair pin
+      infoLevel: 0
+      isComplete: 0
+    - id: door
+      text: The killer should have used it to pick the victim's lock but didn't.
+        Why then ?
+      infoLevel: 1
+      isComplete: 0
+    - id: axe
+      text: Another one said her axe had gone missing, her lock had been picked
+      infoLevel: 2
+      isComplete: 0
+    - id: shining
+      text: The door to the love room was locked from the inside but shattered to
+        splinters. That explains the axe...
+      infoLevel: 3
+      isComplete: 0
+    - id: victim
+      text: Since the victim was tied, they couldn't excape and ended up cut in halves
+      infoLevel: 4
+      isComplete: 0
+    OnStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: VictimPanel, Assembly-CSharp
+          m_MethodName: SetVictimInfo
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LocationPanel, Assembly-CSharp
+          m_MethodName: SetText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Room 048 - 3rd floor
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+          m_MethodName: Teleport
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueBox, Assembly-CSharp
+          m_MethodName: DisplayDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: fab902ec74b1d25488bafd73e65d2925, type: 2}
+            m_ObjectArgumentAssemblyTypeName: DialogueInfo, Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
     OnComplete:
