@@ -2481,22 +2481,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
       propertyPath: m_Volume
-      value: 0.259
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
       propertyPath: MaxDistance
-      value: 2.33
+      value: 2.86
       objectReference: {fileID: 0}
     - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
       propertyPath: MinDistance
-      value: 0
+      value: 1.62
       objectReference: {fileID: 0}
     - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: a9305e7670f9d9e4e9f691af30c0d51b, type: 3}
     - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: DopplerLevel
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.24810791
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].value
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].inSlope
+      value: 1.7250631
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].inWeight
+      value: 0.12076489
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].outSlope
+      value: 1.7250631
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 6216442455870506707, guid: 09d87728b7eb49845a74ee440652994c, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4054,17 +4090,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3277612797002869815, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277612797002869815, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.047169805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277612797002869815, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.047169805
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277612797002869815, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.047169805
+      objectReference: {fileID: 0}
+    - target: {fileID: 5652339444565454386, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.95
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.358
+      value: -0.233
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_LocalPosition.z
