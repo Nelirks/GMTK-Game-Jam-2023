@@ -28,7 +28,6 @@ public class MissionManager : MonoBehaviour
         MissionPanel.instance.UpdateText();
         if (missions[missionIndex].IsMissionFinished())
         {
-            Debug.Log("MISSION FINISHED");
             missions[missionIndex].OnComplete.Invoke();
             if (missionIndex + 1 < missions.Count)
             {

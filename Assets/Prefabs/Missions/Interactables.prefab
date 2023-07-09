@@ -43,10 +43,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 6266802612275049842}
     m_Modifications:
     - target: {fileID: 572358392222365169, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 572358392222365169, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
       propertyPath: m_Name
       value: Mission3
       objectReference: {fileID: 0}
