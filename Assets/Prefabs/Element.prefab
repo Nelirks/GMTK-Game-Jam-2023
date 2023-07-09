@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactibleObject: {fileID: 0}
   activeSound: {fileID: 0}
+  shine: {fileID: 8636868921790908025}
   isInteractable: 0
   OnInteract:
     m_PersistentCalls:
@@ -413,5 +414,10 @@ PrefabInstance:
 --- !u!4 &5187681992702634287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2671383607591693060, guid: 94db4380688cf034e8005db017ff6809, type: 3}
+  m_PrefabInstance: {fileID: 7128336698273350187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8636868921790908025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1526899440739386450, guid: 94db4380688cf034e8005db017ff6809, type: 3}
   m_PrefabInstance: {fileID: 7128336698273350187}
   m_PrefabAsset: {fileID: 0}

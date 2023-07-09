@@ -15,6 +15,8 @@ public class PickableObject : MonoBehaviour
     private AudioSource audioSource;
     public int useNumber;
 
+    [SerializeField] private GameObject shine;
+
     public bool isPickable = false;
     public UnityEvent OnObtain;
 
@@ -62,15 +64,14 @@ public class PickableObject : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            transform.GetChild(0).gameObject.SetActive(true);
+            if (shine != null) shine.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            transform.GetChild(0).gameObject.SetActive(false);
-            Debug.Log("shine");
+            if (shine != null) shine.SetActive(false);
         }
     }
 }
