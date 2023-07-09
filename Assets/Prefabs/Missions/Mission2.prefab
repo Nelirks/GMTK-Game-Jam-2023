@@ -277,7 +277,7 @@ PrefabInstance:
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: iconUI
       value: 
-      objectReference: {fileID: 663651792, guid: 04e63717b4da78f41858a738594842ed, type: 3}
+      objectReference: {fileID: 2020307683, guid: 04e63717b4da78f41858a738594842ed, type: 3}
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: itemName
       value: Cocktail
@@ -619,7 +619,7 @@ PrefabInstance:
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: iconUI
       value: 
-      objectReference: {fileID: -1822193824, guid: 04e63717b4da78f41858a738594842ed, type: 3}
+      objectReference: {fileID: 252252059, guid: 04e63717b4da78f41858a738594842ed, type: 3}
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: itemName
       value: Poison
@@ -743,7 +743,7 @@ PrefabInstance:
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: iconUI
       value: 
-      objectReference: {fileID: 663651792, guid: 04e63717b4da78f41858a738594842ed, type: 3}
+      objectReference: {fileID: 425531159, guid: 04e63717b4da78f41858a738594842ed, type: 3}
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: itemName
       value: Glass
