@@ -30,7 +30,7 @@ public class MissionManager : MonoBehaviour
                 missionIndex += 1;
                 currentInfoLevel = 0;
                 missions[missionIndex].OnStart.Invoke();
-                Debug.Log("Next mission");
+                MissionPanel.instance.UpdateText();
 			}
             else {
                 Debug.Log("Game end !!!");
