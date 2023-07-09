@@ -105,7 +105,6 @@ public class PlayerController : MonoBehaviour
 	}
 
     public void Teleport (Transform target) {
-        Debug.Log(target.position.x + "/" + target.position.y + "/" + target.position.z);
         transform.position = target.position;
 	}
 }
