@@ -7407,7 +7407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705906707216300196, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7458701382756180330, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
       propertyPath: m_AnchorMax.y
@@ -8533,6 +8533,18 @@ PrefabInstance:
     - target: {fileID: 4998069907150154457, guid: ea0a2dd42b026e74d946effc2a5aafc7, type: 3}
       propertyPath: m_Name
       value: IntroScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681532296309270555, guid: ea0a2dd42b026e74d946effc2a5aafc7, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6801645419122820776, guid: ea0a2dd42b026e74d946effc2a5aafc7, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006366840397079313, guid: ea0a2dd42b026e74d946effc2a5aafc7, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11554,6 +11566,10 @@ PrefabInstance:
     - target: {fileID: 1466984109038620889, guid: 72313a946aba0374298e50e8ca5c464c, type: 3}
       propertyPath: m_Name
       value: LevelDesign
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466984109038620889, guid: 72313a946aba0374298e50e8ca5c464c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1876177774718573764, guid: 72313a946aba0374298e50e8ca5c464c, type: 3}
       propertyPath: m_ColliderPaths.Array.size
@@ -18410,6 +18426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3076501405060509511, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3277612797002869815, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -18433,6 +18453,10 @@ PrefabInstance:
     - target: {fileID: 5804571895093420268, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5929670749010028326, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
       propertyPath: m_RootOrder
