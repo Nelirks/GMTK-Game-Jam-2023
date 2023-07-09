@@ -10,6 +10,8 @@ public class Element : MonoBehaviour
     public AudioClip activeSound;
     private AudioSource audioSource;
 
+    [SerializeField] private GameObject shine;
+
     public bool isInteractable = true;
 
     public UnityEvent OnInteract;
@@ -57,15 +59,14 @@ public class Element : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player") && isInteractable)
         {
-            transform.GetChild(2).gameObject.SetActive(true);
+            if (shine != null) shine.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag.Equals("Player") && isInteractable)
         {
-            transform.GetChild(2).gameObject.SetActive(false);
-            Debug.Log("shine");
+            if (shine != null) shine.SetActive(false);
         }
     }
 }
