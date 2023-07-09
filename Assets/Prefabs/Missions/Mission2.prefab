@@ -339,6 +339,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueBox, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 38a8b38c9c05da144be683a1ef25f633, type: 2}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: OnInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: DialogueInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8405979178615104322, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -389,14 +417,67 @@ PrefabInstance:
     - {fileID: 1249822481674330903, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3076501405060509511, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6006726714349540319}
   m_SourcePrefab: {fileID: 100100000, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+--- !u!1 &3781501673967702113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3076501405060509511, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+  m_PrefabInstance: {fileID: 2219001411591274278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &6006726714349540319
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3781501673967702113}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.125}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.28866667}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.25}
+  m_EdgeRadius: 0
 --- !u!114 &4865200902065626637 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
   m_PrefabInstance: {fileID: 2219001411591274278}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 3781501673967702113}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 608f95d257c84fa44bc86c4d5d6abdf9, type: 3}
