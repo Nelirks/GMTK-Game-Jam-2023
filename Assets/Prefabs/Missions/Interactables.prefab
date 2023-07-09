@@ -32,7 +32,7 @@ Transform:
   - {fileID: 8701917606475862417}
   - {fileID: 905568863371140218}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2159243530302725696
 PrefabInstance:
@@ -90,6 +90,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1307416073663391099, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2c22b2d3c1f4a2141953f05d06598899, type: 3}
+    - target: {fileID: 4045601432318405080, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1b196554ba860347a387c23935b4cab, type: 3}
+    - target: {fileID: 6587169560150201452, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fd792c47718cb14e88c21a0a84df9c7, type: 3}
+    - target: {fileID: 6807818285282353337, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: de73639bfbb0830448d1141fae116150, type: 3}
+    - target: {fileID: 8561095749375650317, guid: 61d83d497f2956f4b8b9f90d4946f218, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a1cafe7187831344d9cde78dfacf8b9c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -108,6 +128,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6266802612275049842}
     m_Modifications:
+    - target: {fileID: 789445624641800200, guid: bc8bcbbbacded6e4b884a5465e99eb39, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 785ba47f26039284c9e080b067f5467f, type: 3}
     - target: {fileID: 5787611349898274541, guid: bc8bcbbbacded6e4b884a5465e99eb39, type: 3}
       propertyPath: m_Name
       value: Mission1
@@ -222,6 +246,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2435304142196997692, guid: e94f4daccefb22244965a4f440209f29, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b9c2ff98730bd449a1c14c206e6a286, type: 3}
+    - target: {fileID: 4480631701289743524, guid: e94f4daccefb22244965a4f440209f29, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1793d248155402b4e9b54c98c77a1211, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
