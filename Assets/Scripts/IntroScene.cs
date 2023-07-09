@@ -17,13 +17,13 @@ public class IntroScene : MonoBehaviour
 
     private IEnumerator WaitForDialogueEnd() {
         while(DialogueBox.instance.gameObject.activeSelf) {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3.5f);
             DialogueBox.instance.DisplayNextLine();
         }
         yield return new WaitForSeconds(2);
         DialogueBox.instance.DisplayDialogue(info2);
         while (DialogueBox.instance.gameObject.activeSelf) {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3.5f);
             DialogueBox.instance.DisplayNextLine();
         }
 
