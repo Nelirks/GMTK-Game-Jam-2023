@@ -226,8 +226,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54adc4f7433e96642abc4a23cb418795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSounds: []
-  audioSource: {fileID: 2705592912356664796}
+  walkingSounds:
+  - {fileID: 8300000, guid: 3233493e23385c745940e80438925e6a, type: 3}
+  - {fileID: 8300000, guid: cc11ddb179b51b741ad19f9d50f2c83b, type: 3}
+  - {fileID: 8300000, guid: 1f8e2cb8bd00d6c4db272044685370c5, type: 3}
+  - {fileID: 8300000, guid: 53e43295254f53e45bf678c64f499035, type: 3}
+  - {fileID: 8300000, guid: 970274c90238be745b0f36e498d4c1ff, type: 3}
+  - {fileID: 8300000, guid: b22e2357f95abde4e8e6b71b423644c2, type: 3}
+  - {fileID: 8300000, guid: 56228adac35a47b4eb2f1ed4f5270dbb, type: 3}
+  - {fileID: 8300000, guid: 703d8c11f25c93a4c8f9801fa40db1f2, type: 3}
+  - {fileID: 8300000, guid: 3897f6ebedc82d24d81983c7cf85fab2, type: 3}
+  audioSource: {fileID: 0}
 --- !u!81 &7910118614176055908
 AudioListener:
   m_ObjectHideFlags: 0
@@ -248,7 +257,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 6cc8d0c4df32f8547b7aaf44075997ed, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
