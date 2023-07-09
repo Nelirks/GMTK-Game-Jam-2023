@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 049e1675294ce5d43801f2ea29bc87fb, type: 3}
-  m_Name: D3
+  m_Name: D2
   m_EditorClassIdentifier: 
   dialogueLines:
   - interlocutorName: Lethim Cook - Detective
+    line: That first victim was just the beginning, as the killer kept on in the
+      same corridor.
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
+  - interlocutorName: Lethim Cook - Detective
     line: As for the second victim, she layed lifeless in her bathtub.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Lethim Cook - Detective
     line: It seems as though she was electrocuted while bathing.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Lethim Cook - Detective
     line: (Are we facing a bathroom serial killer ?)
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}

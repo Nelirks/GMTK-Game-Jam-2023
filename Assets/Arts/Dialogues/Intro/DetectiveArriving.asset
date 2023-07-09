@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueLines:
   - interlocutorName: Lethim Cook - Detective
     line: So what do we have here Mark ?
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Mark - Officer
     line: As of now, We've found X bodies. No witnesses have come forward and there
       are no suveillance cameras in the building.
@@ -26,7 +26,7 @@ MonoBehaviour:
   - interlocutorName: Lethim Cook - Detective
     line: I see, but i think we may have a good shot. I just need to retrace the
       sequence of events that has led to this crazy situation.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
   - interlocutorName: Lethim Cook - Detective
     line: First of all, the murderer must have been another client from the hotel...
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}

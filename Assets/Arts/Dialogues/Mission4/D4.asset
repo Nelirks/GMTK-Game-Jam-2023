@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - interlocutorName: Lethim Cook - Detective
-    line: Another lifeless body was then found in the bar downstairs.
-    sprite: {fileID: 0}
+    line: The last murderer was carried out in the love room of the hotel.
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
+  - interlocutorName: Lethim Cook - Detective
+    line: The victim was found with all of their limbs tied to the bed.
+    sprite: {fileID: 21300000, guid: f9a3cc18a7d7dee49b2b05e4a1466d25, type: 3}
