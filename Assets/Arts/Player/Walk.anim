@@ -81,4 +81,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.083333336
+    functionName: PlayRandomWalkingSound
+    data: 
+    objectReferenceParameter: {fileID: 3076501405060509511, guid: 9044284aca5ed584e943ea0e7312e6a1, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
