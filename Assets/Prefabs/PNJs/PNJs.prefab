@@ -130,7 +130,7 @@ Transform:
   - {fileID: 6110838502928854705}
   - {fileID: 158156918496693869}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2770641201508645557
 GameObject:
@@ -480,9 +480,6 @@ PrefabInstance:
       addedObject: {fileID: 6187913718009729210}
     - targetCorrespondingSourceObject: {fileID: 2573927757457307039, guid: 12d676734df1187499f1255636bf1e11, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4467036038377686299}
-    - targetCorrespondingSourceObject: {fileID: 2573927757457307039, guid: 12d676734df1187499f1255636bf1e11, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 4970372844241463147}
   m_SourcePrefab: {fileID: 100100000, guid: 12d676734df1187499f1255636bf1e11, type: 3}
 --- !u!1 &4381645900250269843 stripped
@@ -580,37 +577,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4467036038377686299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4381645900250269843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 608f95d257c84fa44bc86c4d5d6abdf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactibleObject: {fileID: 0}
-  activeSound: {fileID: 0}
-  shine: {fileID: 0}
-  isInteractable: 1
-  OnInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Element, Assembly-CSharp
-        m_MethodName: SetInteractible
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!61 &4970372844241463147
 BoxCollider2D:
   m_ObjectHideFlags: 0
