@@ -22,30 +22,42 @@ public class MissionManager : MonoBehaviour
         MissionPanel.instance.UpdateText();
     }
 
-    public void CompleteObjective(string id = "") {
+    public void CompleteObjective(string id = "")
+    {
         missions[missionIndex].CheckObjective(id);
         MissionPanel.instance.UpdateText();
-        if (missions[missionIndex].IsMissionFinished()) {
+        if (missions[missionIndex].IsMissionFinished())
+        {
             Debug.Log("MISSION FINISHED");
             missions[missionIndex].OnComplete.Invoke();
-            if (missionIndex + 1 < missions.Count) {
+            if (missionIndex + 1 < missions.Count)
+            {
                 missionIndex += 1;
                 currentInfoLevel = 0;
                 missions[missionIndex].OnStart.Invoke();
                 MissionPanel.instance.UpdateText();
-			}
-            else {
-                SceneManager.LoadScene(3);
-			}
-		}
+            }
+            else
+            {
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                int nextSceneIndex = currentSceneIndex + 1;
+
+                if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+                {
+                    SceneManager.LoadScene(nextSceneIndex);
+                }
+            }
+        }
     }
 
-    public string GetMissionReport() {
+    public string GetMissionReport()
+    {
         return missions[missionIndex].GetMissionReport(currentInfoLevel);
-	}
+    }
 
-    public void IncreaseInfoLevel() {
+    public void IncreaseInfoLevel()
+    {
         currentInfoLevel += 1;
         MissionPanel.instance.UpdateText();
-	}
+    }
 }
