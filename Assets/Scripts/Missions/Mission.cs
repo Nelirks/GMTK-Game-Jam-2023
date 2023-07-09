@@ -30,7 +30,7 @@ public class Mission
         string text = "";
         foreach (ChecklistElement element in checklist) {
             if (element.infoLevel > currentHideLevel) continue;
-            if (element.isComplete) text += "<s>" + element.text + "</s>";
+            if (element.isComplete) text += "<color=#4a4b46>" + element.text + "</color>";
             else text += element.text;
             text += "\n";
         }

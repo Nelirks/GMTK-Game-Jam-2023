@@ -78,7 +78,7 @@ MonoBehaviour:
           m_MethodName: SetVictimInfo
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: bc806902ccff9f6429a8418435e231e6, type: 2}
             m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Room 048 - 1st floor
+            m_StringArgument: It rains, It pours
             m_BoolArgument: 0
           m_CallState: 2
     OnComplete:
@@ -128,7 +128,7 @@ MonoBehaviour:
           m_MethodName: SetVictimInfo
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: 6786c76dc6a216d44ac312afc91fa255, type: 2}
             m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -145,6 +145,18 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: LocationPanel, Assembly-CSharp
+          m_MethodName: SetText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Bath in Red Wine
             m_BoolArgument: 0
           m_CallState: 2
     OnComplete:
@@ -177,7 +189,7 @@ MonoBehaviour:
           m_MethodName: SetVictimInfo
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: 969e5867e037caa44b11fca401cf9603, type: 2}
             m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -193,7 +205,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Room 048 - 2nd floor
+            m_StringArgument: Poorly mixed Cocktail
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 0}
@@ -226,7 +238,8 @@ MonoBehaviour:
     completeObjectives: 0
   - checklist:
     - id: pin
-      text: The clients next door complained that someone stole their hair pin
+      text: The clients next door complained that someone stole their hair pin next
+        to the sink
       infoLevel: 0
       isComplete: 0
     - id: door
@@ -255,7 +268,7 @@ MonoBehaviour:
           m_MethodName: SetVictimInfo
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 697dc34c16075e549b2813cc2ced2b78, type: 2}
+            m_ObjectArgument: {fileID: 11400000, guid: f5731551fe186aa41ab6697b68582fd2, type: 2}
             m_ObjectArgumentAssemblyTypeName: VictimInfo, Assembly-CSharp
             m_IntArgument: 0
             m_FloatArgument: 0
@@ -271,7 +284,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Room 048 - 3rd floor
+            m_StringArgument: Love is Shining red
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 0}

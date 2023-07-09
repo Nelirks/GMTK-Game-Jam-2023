@@ -231,7 +231,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658989543116052640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalPosition: {x: 6, y: -0.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -671,6 +671,10 @@ PrefabInstance:
       value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: de73639bfbb0830448d1141fae116150, type: 3}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: isInteractable
       value: 1
       objectReference: {fileID: 0}
@@ -843,7 +847,7 @@ PrefabInstance:
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: activeSound
       value: 
-      objectReference: {fileID: 8300000, guid: 780ad1fac42efae46880789d6faf8c5e, type: 3}
+      objectReference: {fileID: 8300000, guid: a1cafe7187831344d9cde78dfacf8b9c, type: 3}
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: isInteractable
       value: 1
@@ -1052,6 +1056,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1b196554ba860347a387c23935b4cab, type: 3}
+    - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: OnObtain.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1246,7 +1254,7 @@ PrefabInstance:
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: activeSound
       value: 
-      objectReference: {fileID: 8300000, guid: 780ad1fac42efae46880789d6faf8c5e, type: 3}
+      objectReference: {fileID: 8300000, guid: 2c22b2d3c1f4a2141953f05d06598899, type: 3}
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: isInteractable
       value: 1
@@ -1463,6 +1471,10 @@ PrefabInstance:
       propertyPath: isPickable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
+      propertyPath: pickupSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2fd792c47718cb14e88c21a0a84df9c7, type: 3}
     - target: {fileID: 159754376072124710, guid: 36e85d1f2965cd24d966938ac8ec8a9a, type: 3}
       propertyPath: OnObtain.m_PersistentCalls.m_Calls.Array.size
       value: 2

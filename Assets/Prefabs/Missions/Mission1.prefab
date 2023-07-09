@@ -1186,6 +1186,10 @@ PrefabInstance:
       value: Shower
       objectReference: {fileID: 0}
     - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
+      propertyPath: activeSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 785ba47f26039284c9e080b067f5467f, type: 3}
+    - target: {fileID: 6723821979909284139, guid: 1a9451c3d9f8c4f4d9af1c233f51bd58, type: 3}
       propertyPath: isInteractable
       value: 1
       objectReference: {fileID: 0}
