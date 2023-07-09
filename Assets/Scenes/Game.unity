@@ -3513,11 +3513,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5030367834789791463, guid: 2de6aa7dd96d1234796eff922add3427, type: 3}
-      propertyPath: missions.Array.data[3].checklist.Array.data[0].text
-      value: The clients next door complained that someone stole their hair pin next
-        to the sink
-      objectReference: {fileID: 0}
-    - target: {fileID: 5030367834789791463, guid: 2de6aa7dd96d1234796eff922add3427, type: 3}
       propertyPath: missions.Array.data[0].OnStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1722426428}
