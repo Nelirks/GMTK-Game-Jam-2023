@@ -372,6 +372,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6553885534908674112, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
+      propertyPath: m_text
+      value: Xander - Unknown - Unknown - Unknown - The tests we ran on their DNA
+        broke the machine. Are they even human ?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553885534908674112, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553885534908674112, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6705906707216300196, guid: e760d7621b89ad24f8dd2fcff34661ac, type: 3}
       propertyPath: m_Name
       value: CanvasHUD

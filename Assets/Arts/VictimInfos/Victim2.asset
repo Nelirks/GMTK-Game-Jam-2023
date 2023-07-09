@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a3ab2f4b33191f4ea6d7c2152a3b5fe, type: 3}
+  m_Name: Victim2
+  m_EditorClassIdentifier: 
+  victimSprite: {fileID: 21300000, guid: 378ba0933e508794fb8e2d139002fa8a, type: 3}
+  victimDesc: Amanda - 26 - F - CEO of her beauty brand - Got cheated on and needed
+    a place in town.
