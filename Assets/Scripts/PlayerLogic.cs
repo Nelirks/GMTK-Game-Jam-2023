@@ -11,7 +11,9 @@ public class PlayerLogic : MonoBehaviour
         {
             playerInventory.Add(craftResult);
             playerInventory.Remove(pickedObject);
+            InventoryPanel.instance.RemoveItem(pickedObject);
             playerInventory.Remove(craftableWith);
+            InventoryPanel.instance.RemoveItem(craftableWith);
             craftResult.OnInventoryAdd();
         }
     }
