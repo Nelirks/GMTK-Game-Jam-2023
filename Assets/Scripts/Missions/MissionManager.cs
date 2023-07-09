@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class MissionManager : MonoBehaviour
@@ -34,7 +35,7 @@ public class MissionManager : MonoBehaviour
                 MissionPanel.instance.UpdateText();
 			}
             else {
-                Debug.Log("Game end !!!");
+                SceneManager.LoadScene(3);
 			}
 		}
     }

@@ -22,4 +22,9 @@ public class NextSceneButton : MonoBehaviour
             SceneManager.LoadScene(nextSceneIndex);
         }
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
