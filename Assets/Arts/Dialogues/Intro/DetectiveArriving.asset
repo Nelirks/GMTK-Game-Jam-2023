@@ -19,10 +19,10 @@ MonoBehaviour:
   - interlocutorName: Mark - Officer
     line: As of now, We've found X bodies. No witnesses have come forward and there
       are no suveillance cameras in the building.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Mark - Officer
     line: Finding them is gonna be a tough job.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Lethim Cook - Detective
     line: I see, but i think we may have a good shot. I just need to retrace the
       sequence of events that has led to this crazy situation.

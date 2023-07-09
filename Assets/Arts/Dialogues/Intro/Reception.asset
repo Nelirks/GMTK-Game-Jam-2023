@@ -15,21 +15,21 @@ MonoBehaviour:
   dialogueLines:
   - interlocutorName: Policeman
     line: Police department, how may I assist you ?
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Amanda - Receptionist
     line: It's an emergency ! You need to come right now to the hotel ****
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 479da02fe6c529749a43b75348df21b4, type: 3}
   - interlocutorName: Policeman
     line: What seems to be the problem ?
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Amanda - Receptionist
     line: It's horrible, we have discovered multiple customers dead in their rooms,
       please come help us !!!
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 479da02fe6c529749a43b75348df21b4, type: 3}
   - interlocutorName: Policeman
     line: I understand the urgency, a team is on their way as we speak. Please Stay
       Safe till they get there.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: dbb1cbe4e6f678848b8375e676b92dae, type: 3}
   - interlocutorName: Amanda - Receptionist
     line: Please hurry ! The safety of our guests and staff is at risk.
-    sprite: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 479da02fe6c529749a43b75348df21b4, type: 3}
