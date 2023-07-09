@@ -103,4 +103,8 @@ public class PlayerController : MonoBehaviour
         if (prevent) speed = 0;
         else speed = baseSpeed;
 	}
+
+    public void Teleport (Transform target) {
+        transform.position = target.position;
+	}
 }
