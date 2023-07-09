@@ -23,7 +23,6 @@ public class PnjController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Debug.Log(rb.velocity);
         if (rb.velocity.x > 0)
         {
             spriteRenderer.flipX = true;
@@ -44,7 +43,8 @@ public class PnjController : MonoBehaviour
                 Vector2 targetPosition = waypoints[currentWaypointIndex].position;
                 while ((Vector2)transform.position != targetPosition)
                 {
-                    transform.position = Vector2.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
+                    Vector2 newPos = Vector2.MoveTowards(transform.position, targetPosition, movementSpeed * Time.deltaTime);
+                    transform.position = new Vector3(newPos.x, newPos.y, 1);
                     yield return null;
                 }
                 yield return new WaitForSeconds(pauseDuration);
