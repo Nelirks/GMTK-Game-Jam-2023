@@ -38,14 +38,18 @@ public class MissionManager : MonoBehaviour
             }
             else
             {
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                int nextSceneIndex = currentSceneIndex + 1;
-
-                if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-                {
-                    SceneManager.LoadScene(nextSceneIndex);
-                }
+                StartCoroutine(WaitAndLoadScene());
             }
+        }
+    }
+
+    private IEnumerator WaitAndLoadScene() {
+        yield return new WaitForSeconds(5);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings) {
+            SceneManager.LoadScene(nextSceneIndex);
         }
     }
 
