@@ -13,7 +13,6 @@ public class InteractTuto : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(element.isInteractable);
         if (!element.isInteractable)
         {
             popupText.SetActive(false);

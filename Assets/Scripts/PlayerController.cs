@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour
 
     private void Interact()
     {
+        Debug.Log(obj + " / " + elem);
         if (obj != null)
         {
             obj.GetComponent<PickableObject>().PickUp();
@@ -75,7 +76,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Entered " + other);
         if (other.gameObject.tag.Equals("Object"))
         {
             obj = other.gameObject;
