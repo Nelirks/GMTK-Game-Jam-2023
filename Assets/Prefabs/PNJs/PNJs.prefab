@@ -130,7 +130,7 @@ Transform:
   - {fileID: 6110838502928854705}
   - {fileID: 158156918496693869}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2770641201508645557
 GameObject:
@@ -863,6 +863,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453036790709550209}
     m_Modifications:
+    - target: {fileID: 1642258036779081479, guid: 535614b26858fe741bb983655f2eeb2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 26fe9938520a4c84ea63643b0c9f3c5c, type: 3}
     - target: {fileID: 2031544116561975090, guid: 535614b26858fe741bb983655f2eeb2b, type: 3}
       propertyPath: movementSpeed
       value: 1
@@ -883,6 +887,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 3459445123872525892}
+    - target: {fileID: 3004392096625503000, guid: 535614b26858fe741bb983655f2eeb2b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: be44b6709b4919c4dbf611e875b1a549, type: 2}
     - target: {fileID: 3470055794548267875, guid: 535614b26858fe741bb983655f2eeb2b, type: 3}
       propertyPath: m_RootOrder
       value: -1
